@@ -78,13 +78,7 @@
     let to = document.querySelector('.to')
     let elementsArr = document.querySelectorAll('.elements')
 
-    for(ele of elementsArr){
-        ele.addEventListener('dragstart',function(e){
-            let selectedElement = e.target;
-
-            to.addEventListener('dragover',function(e){
-                e.preventDefault();
-            })
+    
 
             to.addEventListener('drop',function(e){
                 to.appendChild(selectedElement)
